@@ -41,6 +41,6 @@ void Copter::userhook_SlowLoop()
 #ifdef USERHOOK_SUPERSLOWLOOP
 void Copter::userhook_SuperSlowLoop()
 {
-    // put your 1Hz code here
+    hal.console->printf("Hola Mundo!\n");
 }
 #endif
