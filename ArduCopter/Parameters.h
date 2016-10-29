@@ -53,6 +53,7 @@ public:
         k_param_ins_old,                        // *** Deprecated, remove with next eeprom number change
         k_param_ins,                            // libraries/AP_InertialSensor variables
         k_param_NavEKF2,
+        k_param_new1,       // 6
 
         // simulation
         k_param_sitl = 10,
@@ -183,7 +184,7 @@ public:
 
         // 97: RSSI
         k_param_rssi = 97,
-                
+
         //
         // 100: Inertial Nav
         //
@@ -402,7 +403,7 @@ public:
 
     AP_Int16        poshold_brake_rate;         // PosHold flight mode's rotation rate during braking in deg/sec
     AP_Int16        poshold_brake_angle_max;    // PosHold flight mode's max lean angle during braking in centi-degrees
-    
+
     // Waypoints
     //
     AP_Int32        rtl_loiter_time;
@@ -410,6 +411,8 @@ public:
     AP_Int16        land_speed_high;
     AP_Int16        pilot_velocity_z_max;        // maximum vertical velocity the pilot may request
     AP_Int16        pilot_accel_z;               // vertical acceleration the pilot may request
+
+    AP_Int16        new1;
 
     // Throttle
     //

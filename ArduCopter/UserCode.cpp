@@ -41,6 +41,6 @@ void Copter::userhook_SlowLoop()
 #ifdef USERHOOK_SUPERSLOWLOOP
 void Copter::userhook_SuperSlowLoop()
 {
-    hal.console->printf("Hola Mundo!\n");
+    hal.console->printf("Hola Mundo! %i\n", g.new1);
 }
 #endif
